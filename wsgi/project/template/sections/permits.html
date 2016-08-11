@@ -1,0 +1,69 @@
+{% extends "layout/base.html" %}
+{% block wrapper_class %}tramites-permisos{% endblock %}
+{% block site_wrapper %}
+{% autoescape off %}
+<div class="container plain_container">
+	<h1>
+		{{section_data_db.0}}
+	</h1>
+	{{section_data_db.14}}
+</div>
+<div class="container top_bordered shaded_top">
+	<div class="two_column">
+		<p>{{section_data_db.1}}</p>
+	</div><div class="two_column">
+		<p>{{section_data_db.2}}</p>
+	</div>
+	<hr class="fancy_bkg">
+	<span id="permits"></span>
+	<div id="permisos">
+		<h2 class="permisos us"><span>{{section_data_db.3}}</span></h2>
+		<div class="two_column ">
+			<ul class="slider_navigation" alt="slider_permisos">
+				<li id="permisos_prev" class="prev"></li>
+				<li id="permisos_next" class="next"></li>
+			</ul>	
+			<div id="slide_eu_wrapper">
+				<div id="slider_permisos" class="grid_slider">
+					<ul>
+						<li id="item_1" class="current first">
+							{{section_data_db.4}}
+						</li><li id="item_2">
+							{{section_data_db.5}}
+						</li><li id="item_3">
+							{{section_data_db.6}}
+						</li><li id="item_4">
+							{{section_data_db.7}}
+						</li><li id="item_5">
+							{{section_data_db.8}}
+						</li><li id="item_6">
+							{{section_data_db.9}}
+						</li><li id="item_7">
+							{{section_data_db.10}}
+						</li><li id="item_8">
+							{{section_data_db.11}}
+						</li><li id="item_9" class="last">
+							{{section_data_db.12}}
+						</li>
+					</ul>
+				</div><!-- #slider_eu -->
+			</div><!-- #slide_eu_wrapper -->
+		</div><div id="permisos_slideshow" class="two_column">
+			<div class="slideshow">
+				<div><span class="permisos_img current"></span></div>
+				<div><span id="permisos_img2" class="permisos_img"></span></div>
+			</div>
+		</div>
+	</div>
+	<div class="list_area grid">
+		<h3><span>{{section_data_db.3}}</span></h3>
+		<div class="grid_shadow">
+			<ul class="slider_dmv grid" alt="slider_permisos">
+				{{section_data_db.13}}
+			</ul>
+		</div>
+	</div>
+</div>
+
+{% endautoescape %}
+{% endblock %}

@@ -4,6 +4,7 @@ def update():
     local('git pull origin develop')
     local('rm -rf wsgi/project')
     local('cp -r project wsgi/project')
+    local('cp -r project/static/. wsgi/static')
 
 def deploy():
     local('git add .')
@@ -11,4 +12,4 @@ def deploy():
     local('git push upstream HEAD:master')
 
 def assets():
-    local('cp -r static/. ../wsgi/static/')
+    local('cp -r project/static/. wsgi/static')

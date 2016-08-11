@@ -1,0 +1,198 @@
+/* ************ GENERAL ************ */
+strong.red
+	color: #ec1c24
+
+
+/* ************ TRAMITES *********** */
+
+#wrapper.tramites-permisos
+	background-image: url('../images/tramites_background.jpg')
+
+
+.slider_navigation
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+	li
+		background:  url(../images/navigation_sprite.png) 0 0  no-repeat
+		display: inline-block
+		height: 26px
+		vertical-align: top
+		width: 27px
+		
+	li.prev:hover
+		background-position: 0 -37px
+		
+	li.next	
+		background-position: -33px 0
+		
+		&:hover
+			background-position: -33px -37px
+
+h2.tramite, h2.permisos
+	background: url(../images/tramites_sprite.png) 0 15px no-repeat
+	color: #656565
+	font: bold 25px "Myriad Pro", Verdana, sans-serif
+	padding:  0 0 0 75px
+	text-transform: none
+	
+	span
+		background: url(../images/tramites_sprite.png) 0 0 no-repeat
+		display: block
+		padding: 22px 75px 22px 0
+		
+h2.us, h2.us.seguros
+	span
+		background-position: right -171px
+		
+h2.mx, h2.mx.seguros
+	span
+		background-position: right -534px
+		
+		
+.slider_navigation
+	margin:  0 0 0 auto
+	text-align: right
+	width: 100px
+	
+.grid_slider
+	.dash_decor
+		background: url(../images/red_dash.jpg) 0 0 no-repeat
+		display: block
+		height: 2px
+		margin: 20px 0 0
+		width: 13px
+	.dash_decor_eu
+		margin-top: 50px
+
+	ul
+		list-style-type: none
+		margin: 40px 0 0
+		padding: 0
+		
+	li
+		display: none
+		
+	li.current
+		display: block
+.dmv_img, .eu_img, .mx_img, .permisos_img
+	background: url(../images/slide_dmv.png) 0 0 no-repeat
+	display: none
+	height: 225px
+	margin: 0 0 0 -35px
+	width: 485px
+	
+#dmv_img2, #mx_img2, #permisos_img2
+	background-position: 0 -256px
+
+
+.eu_img
+	background: url(../images/slide_eu.png) 0 0 no-repeat
+	
+#eu_img2
+	background-position: 0 -256px
+
+.mx_img
+	background: url(../images/slide_mx.png) 0 0 no-repeat
+
+.permisos_img
+	background: url(../images/slide_permisos.png) 0 0 no-repeat
+	margin: 60px 0 0 -35px
+
+.dmv_img.current, .eu_img.current, .mx_img.current, .permisos_img.current
+	display: block
+		
+.grid_shadow	
+	@include filter-gradient(#ffffff , #f6f6f6 , vertical)
+	@include background-image(linear-gradient( left,  #ffffff ,#fbfbfb  2%, #f6f6f6 50%, #fbfbfb  98%, #ffffff))
+	margin: 0 -20px 7px
+	padding: 0 27px 7px
+	
+ul.grid
+	border: 1px solid #cbcbcb
+	border-left: none
+	border-right: none
+	font-size: 12px
+	list-style-type: none
+	margin: 50px 10px 0
+	padding: 0
+	
+	li
+		background: #fcfcfc url(../images/tramites_sprite.png) 97% -715px no-repeat
+		border-bottom: none
+		border-top: 1px solid #cbcbcb
+		cursor: pointer
+		display: inline-block
+		min-height: 40px
+		padding: 2px 0
+		vertical-align: top
+		width: 33.3%
+		
+		span
+			display: block
+			border-right: 1px solid #cbcbcb
+			padding: 13px 35px 13px 15px
+			
+		&:hover
+			background-color: #f2f2f2
+			background-position: 97% -843px
+	
+	li.blank
+		background-image: none
+	
+		&:hover
+			background-color: #fcfcfc
+	
+	li.first
+		span
+			border-left: 1px solid #cbcbcb
+
+	li.first_row
+		border-top: none
+	
+	span
+		min-height: 14px
+	
+	.two_lines
+		line-height: 1em
+		
+		span
+			font-size: 12px
+			padding: 8px 35px 8px 15px
+ul.grid_no_margin_top
+	margin-top: 0			
+.slideshow.left
+	.eu_img
+		margin: 0 -34px 0 -10px
+		
+
+
+.tramites-permisos
+	h3
+		border-right: 1px solid #cbcbcb
+		color: #ec1c24
+		display: inline-block
+		font: bold 16px "Myriad Pro", Verdana, sans-serif
+		margin: 20px 0 0 17px
+		padding: 0 5px 0 0
+
+		span
+			border-bottom: 6px solid #f2f2f2
+			display: block
+			padding: 3px 30px 10px 0
+
+	h4
+		color: #ec1c24
+		font-size: 25px
+		margin: 0 0 15px
+		padding: 10px 0 0
+
+	.slideshow
+		margin-bottom: 35px
+		margin-top: 40px
+	.slideshow.left
+		margin-top: 20px
+
+	.shaded_top
+		padding-top: 20px

@@ -1,0 +1,96 @@
+{% extends "layout/base.html" %}
+{% block wrapper_class %}wrapper_inicio{% endblock %}
+{% block site_wrapper %}
+{% autoescape off %}
+<div id="home_banner">
+	<div class="container">
+		<p>{{section_data_db.0}}</p>
+	</div>
+</div>
+<div class="container shaded_bottom">
+	<div class="two_column">
+		<img src="/static/images/inicio_nosotros_01.png" title="Nosotros" class="img_neg_margin" />
+		<h3>{{section_data_db.1}}</h3>
+		<p>
+			{{section_data_db.2}}
+		</p>
+		<p>
+			{{section_data_db.3}}
+		</p>
+		
+	</div><div class="two_column">
+		<img src="/static/images/inicio_compra_02.png" title="{{section_data_db.4}}" class="img_neg_margin" />
+		<h3>{{section_data_db.4}}</h3>
+		<p>
+			{{section_data_db.5}}
+		</p>
+		<p>
+			{{section_data_db.6}}
+		</p>
+	</div>
+	<div class="two_column">
+		{{section_data_db.7}}
+	</div><div class="two_column">
+		{{section_data_db.8}}
+	</div>
+</div>
+<div id="black_bkg">
+	<div class="container">
+		<hr />
+		<h2><span>{{section_data_db.9}}</span></h2>
+		<div class="two_column">
+			<div id="black_left">
+				<h3>{{section_data_db.10}}</h3>
+				<p>
+					{{section_data_db.11}}
+				</p>
+			</div>
+		</div><div class="two_column">
+			<div id="black_right">
+				<h3>{{section_data_db.12}}</h3>
+				<p>
+					{{section_data_db.13}}
+				</p>
+				<p>
+					{{section_data_db.14}}
+				</p>
+			</div>
+		</div>
+		<div class="two_column">
+			{{section_data_db.15}}
+		</div><div class="two_column">
+			{{section_data_db.16}}
+		</div>
+		
+	</div>
+</div>
+<div class="container shaded_top">
+	<div class="two_column">
+		<div id="white_left">
+			<h3>{{section_data_db.17}}</h3>
+			<p>
+				{{section_data_db.18}}
+			</p>
+			<p>
+				{{section_data_db.19}}
+			</p>
+		</div>
+	</div><div class="two_column">
+		<div id="white_right">
+			<h3>{{section_data_db.20}}</h3>
+			<p>
+				{{section_data_db.21}}
+			</p>
+			<p>
+				{{section_data_db.22}}
+			</p>
+		</div>
+	</div>
+	<div class="two_column">
+		{{section_data_db.23}}
+	</div><div class="two_column">
+		{{section_data_db.24}}
+	</div>
+</div>
+{% endautoescape %}
+{% endblock %}

@@ -1,0 +1,120 @@
+{% extends "layout/base.html" %}
+{% block wrapper_class %}wrapper_about_us{% endblock %}
+{% block site_wrapper %}
+{% autoescape off %}
+	<h1>{{section_data_db.0}}</h1>
+	<div class="container top_bordered shaded_top">
+		<div class="two_column">
+			<h2>{{section_data_db.1}}</h2>
+			<p>
+				{{section_data_db.2}}
+			</p>
+			<p>
+				{{section_data_db.3}}
+			</p>
+		</div><div class="two_column">
+			<img src="/static/images/nosotros_1.png" alt="Inter Red Insurance" class="nosotros_negative_image" />
+			<p>
+				{{section_data_db.4}}
+			</p>
+		</div>
+		
+	<div class="shaded_bottom negative_shade"></div>
+		<div class="two_column">
+			<p>
+				{{section_data_db.5}}
+			</p>
+		</div><div class="two_column">
+		</div>
+		<ul id="premios">
+			<li class="first">
+				Premio Diamante
+				<em>2010</em>
+			</li><li>
+				Premio Diamante
+				<em>2011</em>
+			</li><li>
+				Premio Diamante
+				<em>2012</em>
+			</li>
+		</ul>
+	<div class="shaded_bottom negative_shade"></div>
+		<div class="two_column">
+			<h3>{{section_data_db.6}}</h3>
+			<p>
+				{{section_data_db.7}}
+			</p>
+		</div><div class="two_column">
+			<h3>{{section_data_db.8}}</h3>
+			<p>
+				{{section_data_db.9}}
+			</p>
+		</div>
+	</div>
+	<hr class="thin_border_bottom" />
+	<div class="container top_bordered shaded_top">
+		<div class="two_column">
+			<h3>{{section_data_db.10}}</h3>
+			<p>
+				{{section_data_db.11}}
+			</p>
+			<div class="quarter_column quarter_column_left">
+				<h4>{{section_data_db.12}}</h4>
+				<p>
+					{{section_data_db.13}}
+				</p>
+			</div><div class="quarter_column">
+				<h4>{{section_data_db.14}}</h4>
+				<p>
+					{{section_data_db.15}}
+				</p>
+			</div>
+			<hr class="thin_border_bottom short" />
+			<div class="quarter_column quarter_column_left">
+				<h4>{{section_data_db.16}}</h4>
+				<p>
+					{{section_data_db.17}}
+				</p>
+			</div><div class="quarter_column">
+				<h4>{{section_data_db.18}}</h4>
+				<p>
+					{{section_data_db.19}}
+				</p>
+			</div>
+		</div><div class="two_column">
+			<h3>{{section_data_db.20}}</h3>
+			<p>
+				{{section_data_db.21}}
+			</p>
+			<ul class="red_dash">
+				<strong>
+					{{section_data_db.22}}
+				</strong>
+			</ul>
+		</div>
+	</div>
+	<hr class="thin_border_bottom" />
+	<div class="container top_bordered shaded_top padded40">
+		<h3>{{section_data_db.23}}</h3>
+		<div class="cliente" id="burger_king"></div><div class="cliente" id="mateo"></div><div class="cliente" id="frapesa"></div><div class="cliente" id="arnian"></div><div class="cliente" id="ulloa"></div>
+		<h5>{{section_data_db.30}}</h5>
+		<div class="nuestros_clientes_uls">
+			<ul class="red_dash inlined left">
+				{{section_data_db.24}}
+			</ul><ul class="red_dash inlined centered">
+				{{section_data_db.25}}
+			</ul><ul class="red_dash inlined right">
+				{{section_data_db.26}}
+			</ul>
+		</div>
+	</div>
+	<hr class="thin_border_bottom" />
+	<div class="container top_bordered shaded_top padded40">
+		<h3>{{section_data_db.27}}</h3>
+		<span class="companias_seguros"><span>{{section_data_db.28}}</span></span>
+		<div class="cliente" id="global_hawk"></div><div class="cliente" id="caic"></div><div class="cliente" id="national_unity"></div><div class="cliente" id="aic"></div><div class="cliente" id="progressive"></div><div class="cliente" id="access"></div><div class="cliente" id="sutter"></div><br />		<hr class="thin_border_bottom" />
+		<span class="companias_seguros seguros_mexicanos"><span>{{section_data_db.29}}</span></span>
+		<div class="cliente" id="axa"></div><div class="cliente" id="qualitas"></div><div class="cliente" id="metropolitana"></div><div class="cliente" id="atlas"></div><div class="cliente" id="general"></div>
+	</div>
+{% endautoescape %}
+{% endblock %}

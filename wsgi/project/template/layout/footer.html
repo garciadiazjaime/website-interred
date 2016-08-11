@@ -1,0 +1,14 @@
+{% autoescape off %}
+<div id="footer_sitemap" class="container">
+	<div class="foot_block long">
+		{{footer_menu}}
+	</div>
+	<div class="foot_block">
+		<h2>{{general_data.footer.title}}</h2>
+		{{general_data.footer.address}}
+	</div>
+	<div class="foot_block right">
+		<img src="/static/images/footer_logo.png" alt="Inter Red" />
+	</div>
+</div>
+{% endautoescape %}

@@ -1,0 +1,31 @@
+{% extends "layout/base.html" %}
+{% block wrapper_class %}wrapper_buy_online{% endblock %}
+{% block site_wrapper %}
+{% autoescape off %}
+	<h1>{{section_data_db.0}}</h1>
+	<div class="container top_bordered shaded_top">
+		<h3>{{section_data_db.1}}</h3>
+		<hr class="fancy_bkg" />
+		<div class="two_column">
+			<br />
+			<p>
+				{{section_data_db.2}}
+			</p>
+			<h5>{{section_data_db.3}}</h5>
+			<br />
+			<br />
+			<br />
+			<h5>{{section_data_db.4}}</h5>
+			<hr class="thin_border_bottom short" />
+			<p>
+				{{section_data_db.5}}
+			</p>
+			<br />
+			<br />
+			{{section_data_db.6}}
+		</div><div class="two_column">
+			<img src="/static/images/compra_img.png" alt="Inter Red Insurance" />
+		</div>
+	</div>
+{% endautoescape %}
+{% endblock %}
