@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es-419">
+<head>
+	<title>{{section_data.gral_info.page_title}}</title>
+	<script type="text/javascript"> if (!window.console) console = {log: function() {}}; </script>
+	<link rel="stylesheet" type="text/css" href="/static/css/screen.css" />
+	<link rel="shortcut icon" type="image/png" href="/static/images/favicon.ico" />
+	<script type="text/javascript" src="/static/js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="/static/js/functions.js" ></script>
+</head>
+<body>
+	<div id="header" {% if section_data.gral_info.section == "inicio" or section_data.gral_info.section == "home" %}class="inicio"{% endif %}>
+			{% include 'layout/header.html' %}
+	</div>
+	<div id="wrapper"  class="{% block wrapper_class %}wrapper_inicio{% endblock %}">
+		<div id="background_holder"></div>
+		<div id="content">
+			{% block site_wrapper %}{% endblock %} 
+		</div>		
+		<div id="footer">
+			{% include 'layout/footer.html' %}
+		</div>
+	</div>
+</body>
+</html>

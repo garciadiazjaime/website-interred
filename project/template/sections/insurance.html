@@ -1,0 +1,119 @@
+ {% extends "layout/base.html" %}
+{% block wrapper_class %}seguros{% endblock %}
+{% block site_wrapper %}
+{% autoescape off %}
+	<h1>{{section_data_db.30}}</h1><span id="eu"></span><span id="us"></span>
+	<div class="container top_bordered shaded_top">
+		<div id="eu">
+			<h2 class="seguros us"><span>{{section_data_db.0}}</span></h2>	
+			<hr class="fancy_bkg">
+			
+			<div class="two_column ">
+				<ul class="slider_navigation" alt="slider_permisos">
+					<li id="permisos_prev" class="prev"></li>
+					<li id="permisos_next" class="next"></li>
+				</ul>	
+				<div id="slide_eu_wrapper">
+					<div id="slider_permisos" class="grid_slider">
+						<ul>
+							<li id="item_0" class="current first">
+								<h4>{{section_data_db.1}}</h4>
+								{{section_data_db.2}}<br><br>
+								{{section_data_db.3}}<br><br>
+								{{section_data_db.4}}<br><br>
+							</li><li id="item_1">
+								{{section_data_db.5}}
+							</li><li id="item_2">
+								{{section_data_db.6}}
+							</li><li id="item_3">
+								{{section_data_db.7}}
+							</li><li id="item_4">
+								{{section_data_db.8}}
+							</li><li id="item_5">
+								{{section_data_db.9}}
+							</li><li id="item_6">
+								{{section_data_db.10}}
+							</li><li id="item_7">
+								{{section_data_db.11}}
+							</li><li id="item_8">
+								{{section_data_db.12}}
+							</li><li id="item_9" class="last">
+								{{section_data_db.13}}
+							</li>
+						</ul>
+					</div><!-- #slider_eu -->
+				</div><!-- #slide_mx_wrapper -->
+			</div><div id="seguros_slideshow" class="two_column ">
+				<div class="slideshow">
+					<div><span class="seguros_img current"></span></div>
+					<div><span id="seguros_img2" class="seguros_img"></span></div>
+				</div>				
+			</div>
+		</div>
+		<div class="list_area grid">
+			<h3><span>{{section_data_db.0}}</span></h3>
+			<div class="grid_shadow">
+
+				<ul class=" grid" id="grid_slider_permisos" alt="slider_permisos">
+					{{section_data_db.14}}
+				</ul>
+			</div>
+		</div><span id="mx"></span>
+		<div class="shaded_top">
+			<h2 class="seguros us"><span>{{section_data_db.15}}</span></h2>
+			<hr class="fancy_bkg">
+			<div class="two_column ">
+				<ul class="slider_navigation" alt="slider_permisos_mx">
+					<li id="permisos_prev" class="prev"></li>
+					<li id="permisos_next" class="next"></li>
+				</ul>
+				<div id="slide_mx_wrapper">
+					<div id="slider_permisos_mx" class="grid_slider">
+						<ul>
+							<li id="item_0" class="current first">
+								{{section_data_db.16}}
+							</li><li id="item_1">
+								{{section_data_db.17}}
+							</li><li id="item_2">
+								{{section_data_db.18}}
+							</li><li id="item_3">
+								{{section_data_db.19}}
+							</li><li id="item_4">
+								{{section_data_db.20}}
+							</li><li id="item_5">
+								{{section_data_db.21}}
+							</li><li id="item_6">
+								{{section_data_db.22}}
+							</li><li id="item_7">
+								{{section_data_db.23}}
+							</li><li id="item_8">
+								{{section_data_db.24}}
+							</li><li id="item_9">
+								{{section_data_db.25}}
+							</li><li id="item_10">
+								{{section_data_db.26}}
+							</li><li id="item_11" class="last">
+								{{section_data_db.27}}
+							</li>
+						</ul>
+					</div><!-- #slider_mx -->
+				</div><!-- #slide_mx_wrapper -->
+			</div><div id="seguros_slideshow_mx" class="two_column ">
+				<div class="slideshow">
+					<div><span class="mx_img current"></span></div>
+					<div><span id="seguros_mx_img2" class="mx_img"></span></div>
+				</div>
+			</div>
+		</div>
+		<div class="list_area grid">
+			<h3><span>{{section_data_db.29}}</span></h3>
+			<div class="grid_shadow">
+				<ul class="grid" alt="slider_permisos_mx">
+					{{section_data_db.28}}
+				</ul>
+			</div>
+		</div>
+	</div>
+
+{% endautoescape %}
+{% endblock %}

@@ -1,0 +1,10 @@
+{% autoescape off %}
+<div id="header_wrapp">	
+	<a href="{% if lang == 0 %}/inicio{% else %}/home{% endif %}" title="Inter Red"><img src="/static/images/header_logo{% if section_data.gral_info.section == "inicio" or section_data.gral_info.section == "home" %}_index{% endif %}.png" alt="Inter Red" /></a>
+	{{main_menu}}
+	<div id="language">
+		<a class="{% if lang == 0 %}active{% endif %}" href="/{% if lang == 0 %}{{section_data.gral_info.section}}{% else %}{{section_data.gral_info.section_lang}}{% endif %}" title="Español">Esp</a> / <a href="/{% if lang == 1 %}{{section_data.gral_info.section}}{% else %}{{section_data.gral_info.section_lang}}{% endif %}" title="English" class="{% if lang == 1 %}active{% endif %}">Eng</a>
+	</div>
+	<div class="facebook"></div>
+</div>
+{% endautoescape %}

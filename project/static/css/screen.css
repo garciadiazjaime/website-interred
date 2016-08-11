@@ -1,0 +1,537 @@
+@font-face { font-family: "SSP_black"; src: url('../fonts/../fonts/SourceSansPro-Black.eot') format('embedded-opentype'), url('../fonts/../fonts/SourceSansPro-Black.ttf') format('truetype'); }
+
+@font-face { font-family: "SSP_bold"; src: url('../fonts/../fonts/SourceSansPro-Bold.eot') format('embedded-opentype'), url('../fonts/../fonts/SourceSansPro-Bold.ttf') format('truetype'); }
+
+@font-face { font-family: "SSP_extralight"; src: url('../fonts/../fonts/SourceSans-ExtraLight.eot') format('embedded-opentype'), url('../fonts/../fonts/SourceSansPro-ExtraLight.ttf') format('truetype'); }
+
+@font-face { font-family: "SSP_light"; src: url('../fonts/../fonts/SourceSansPro-Light.eot') format('embedded-opentype'), url('../fonts/../fonts/SourceSansPro-Light.ttf') format('truetype'); }
+
+@font-face { font-family: "SSP_regular"; src: url('../fonts/../fonts/SourceSansPro-Regular.eot') format('embedded-opentype'), url('../fonts/../fonts/SourceSansPro-Regular.ttf') format('truetype'); }
+
+@font-face { font-family: "SSP_semibold"; src: url('../fonts/../fonts/SourceSansPro-Semibold.eot') format('embedded-opentype'), url('../fonts/SourceSansPro-Semibold.ttf') format('truetype'); }
+
+/* line 16, ../sass/screen.sass */
+html { min-width: 1040px; }
+
+/* line 18, ../sass/screen.sass */
+body { color: #656565; font-family: "SSP_regular", Arial, sans-serif; margin: 0; padding: 0; position: relative; text-align: justify; }
+
+/* line 25, ../sass/screen.sass */
+img, a { border: none; }
+
+/* line 27, ../sass/screen.sass */
+#wrapper { background-size: auto; background-attachment: fixed; width: 100%; min-width: 1100px; padding-top: 92px; position: absolute; top: 0; }
+
+/* line 36, ../sass/screen.sass */
+#header { background: url("../images/header_bkg.png") repeat; height: 92px; position: fixed; top: 0; width: 100%; z-index: 100; }
+
+/* line 44, ../sass/screen.sass */
+#header.inicio { background-color: white; }
+
+/* line 47, ../sass/screen.sass */
+#header_wrapp { margin: 0 auto 15px; height: 92px; width: 1040px; }
+/* line 51, ../sass/screen.sass */
+#header_wrapp > ul { border: 1px solid #dddddd; border-top: none; border-bottom: none; display: inline-block; padding: 10px 0; margin: 0; vertical-align: middle; }
+/* line 59, ../sass/screen.sass */
+#header_wrapp > ul > li { display: inline-block; }
+/* line 61, ../sass/screen.sass */
+#header_wrapp > ul > li > a { color: #656565; padding: 0 9px; }
+/* line 64, ../sass/screen.sass */
+#header_wrapp > ul > li > a:hover { color: black; }
+/* line 67, ../sass/screen.sass */
+#header_wrapp > ul .active > a { color: #ec1c24; font-weight: bold; }
+/* line 70, ../sass/screen.sass */
+#header_wrapp a { font-size: 14px; display: inline-block; text-decoration: none; vertical-align: middle; }
+/* line 75, ../sass/screen.sass */
+#header_wrapp #header_wrapp { margin: 0 auto; width: 1040px; }
+/* line 78, ../sass/screen.sass */
+#header_wrapp #language { display: inline-block; color: #b7b7b7; margin: 0 10px; }
+/* line 82, ../sass/screen.sass */
+#header_wrapp #language a { color: #b7b7b7; }
+/* line 84, ../sass/screen.sass */
+#header_wrapp #language .active { color: #656565; font-weight: bold; }
+/* line 87, ../sass/screen.sass */
+#header_wrapp .facebook { background: url("../images/header_facebook.jpg") no-repeat 0 0; display: inline-block; height: 17px; margin: 0 0 -2px; vertical-align: center; width: 17px; }
+/* line 94, ../sass/screen.sass */
+#header_wrapp .facebook:hover { background-position: 0 -17px; }
+
+/* line 96, ../sass/screen.sass */
+.invisible { display: none; position: fixed; }
+/* line 99, ../sass/screen.sass */
+.invisible ul { padding: 33px 0 0 0; }
+/* line 101, ../sass/screen.sass */
+.invisible ul li { background: black url("../images/menu_link_arrow.png") no-repeat 166px 19px; border-left: #ec1c24 solid 1px; display: block; margin: 1px 0; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75); opacity: 0.75; text-align: left; }
+/* line 104, ../sass/screen.sass */
+.invisible ul li a { color: white; font-weight: bold; padding: 15px; width: 155px; }
+/* line 113, ../sass/screen.sass */
+.invisible ul li:hover { background: white url("../images/menu_link_arrow.png") no-repeat 166px -76px; }
+/* line 115, ../sass/screen.sass */
+.invisible ul li:hover a { color: #ec1c24; font-weight: bold; }
+
+/* line 120, ../sass/screen.sass */
+#footer { *zoom: 1; filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFAFAFB', endColorstr='#FFF8F8F9'); background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fafafb), color-stop(100%, #f8f8f9)); background-image: -webkit-linear-gradient(top, #fafafb, #f8f8f9); background-image: -moz-linear-gradient(top, #fafafb, #f8f8f9); background-image: -o-linear-gradient(top, #fafafb, #f8f8f9); background-image: linear-gradient(top, #fafafb, #f8f8f9); font: normal 12px sans-serif; border-top: solid 7px whitesmoke; border-bottom: solid 7px #e5e5e5; text-align: left; }
+/* line 127, ../sass/screen.sass */
+#footer a { text-decoration: none; }
+/* line 129, ../sass/screen.sass */
+#footer ul { margin: 0; padding: 0; }
+/* line 132, ../sass/screen.sass */
+#footer ul > li { display: inline-block; vertical-align: top; max-width: 162px; }
+/* line 136, ../sass/screen.sass */
+#footer ul > li > a { border-bottom: 1px solid #dadada; color: #b2b2b2; font-weight: bold; display: block; padding: 30px 11px 13px; }
+/* line 142, ../sass/screen.sass */
+#footer ul > li > a:hover { color: #3c3c3c; }
+/* line 145, ../sass/screen.sass */
+#footer ul > li > ul > li { display: block; }
+/* line 147, ../sass/screen.sass */
+#footer ul > li > ul > li a { border: none; color: #b2b2b2; font-weight: normal; padding: 5px 13px; }
+/* line 152, ../sass/screen.sass */
+#footer ul > li > ul > li a:hover { color: #7c7c7c; }
+/* line 154, ../sass/screen.sass */
+#footer .container { border-bottom: 7px solid #ec1c24; border-top: 1px solid #dadada; width: 1020px; padding: 0; margin-bottom: -7px; }
+/* line 160, ../sass/screen.sass */
+#footer .foot_block { border-left: 1px solid #dadada; display: inline-block; height: 145px; padding: 0 10px 30px; width: 148px; vertical-align: top; }
+/* line 167, ../sass/screen.sass */
+#footer .foot_block h2 { border-bottom: 1px solid #dadada; color: #b2b2b2; font: bold 12px sans-serif; display: block; margin: 0; padding: 30px 13px 13px; text-transform: none; }
+/* line 175, ../sass/screen.sass */
+#footer .foot_block p { color: B2B2B2; font-size: 12px; }
+/* line 178, ../sass/screen.sass */
+#footer .foot_block img { padding-top: 40px; margin: 0; }
+/* line 181, ../sass/screen.sass */
+#footer .right { padding-right: 0; width: 130px; }
+/* line 184, ../sass/screen.sass */
+#footer .long { border: none; padding-left: 0; width: 692px; }
+
+/* line 189, ../sass/screen.sass */
+.container { width: 983px; margin: 0 auto; padding: 40px 20px 60px; }
+
+/* line 193, ../sass/screen.sass */
+.two_column { display: inline-block; width: 450px; margin: 0 20px; vertical-align: top; }
+
+/* line 198, ../sass/screen.sass */
+#background_holder { height: 700px; position: fixed; top: 0; width: 100%; z-index: -1; }
+
+/* line 205, ../sass/screen.sass */
+#wrapper.wrapper_inicio { background-attachment: scroll; }
+
+/* line 208, ../sass/screen.sass */
+.wrapper_inicio { background: url("../images/inicio_bkg.jpg") no-repeat center top; }
+/* line 210, ../sass/screen.sass */
+.wrapper_inicio #background_holder { position: relative; margin: 92px 0 -700px; }
+/* line 213, ../sass/screen.sass */
+.wrapper_inicio .container { background: none; }
+/* line 215, ../sass/screen.sass */
+.wrapper_inicio .shaded_bottom { background: url("../images/shaded_bottom.jpg") no-repeat center bottom; }
+/* line 217, ../sass/screen.sass */
+.wrapper_inicio .shaded_top { background: url("../images/shaded_top.jpg") no-repeat center top; }
+/* line 219, ../sass/screen.sass */
+.wrapper_inicio .img_neg_margin { margin-top: -180px; display: inline-block; }
+
+/* line 222, ../sass/screen.sass */
+#home_banner { color: white; height: 190px; text-align: center; letter-spacing: 0.03em; margin: 0 0 320px; text-align: right; }
+/* line 230, ../sass/screen.sass */
+#home_banner span { font: 22px "SSP_bold"; }
+/* line 233, ../sass/screen.sass */
+#home_banner p { font: 22px "SSP_light"; margin: 0; padding: 8px 65px 0 0; }
+/* line 238, ../sass/screen.sass */
+#home_banner .container { padding-bottom: 0; padding-top: 0; }
+
+/* line 242, ../sass/screen.sass */
+p { font-size: 14px; }
+
+/* line 244, ../sass/screen.sass */
+h3 { font-size: 28px; }
+
+/* line 246, ../sass/screen.sass */
+.linkbutton_red { background: #ec1c24 url("../images/inicio_link_arrow.png") no-repeat 125px 9px; border-bottom: #656565 solid 1px; color: white; display: block; font-size: 13px; -webkit-border-radius: 4px 20px 20px 4px; -moz-border-radius: 4px 20px 20px 4px; -ms-border-radius: 4px 20px 20px 4px; -o-border-radius: 4px 20px 20px 4px; border-radius: 4px 20px 20px 4px; text-decoration: none; padding: 5px 30px 5px 10px; width: 105px; }
+/* line 256, ../sass/screen.sass */
+.linkbutton_red:hover { background: #d8d8d8 url("../images/inicio_link_arrow.png") no-repeat 125px -14px; color: black; }
+
+/* line 259, ../sass/screen.sass */
+.right_floater { float: right; }
+
+/* line 261, ../sass/screen.sass */
+#black_bkg { background: black url("../images/inicio_black_bkg.jpg") no-repeat center top; background-size: auto 100%; margin: 6px 0; color: white; padding: 60px 0 20px; }
+/* line 267, ../sass/screen.sass */
+#black_bkg h2 { background: url("../images/inicio_black_h2.png") no-repeat center top; color: white; padding-top: 80px; font-size: 28px; margin: -110px 0 0 0; text-align: center; text-transform: none; }
+/* line 276, ../sass/screen.sass */
+#black_bkg h2 span { display: inline-block; padding: 5px 10px; }
+/* line 279, ../sass/screen.sass */
+#black_bkg hr { background: url("../images/inicio_chopped_hr.png") no-repeat center top; border: none; height: 1px; margin: 100px 0 0 0; }
+/* line 284, ../sass/screen.sass */
+#black_bkg .linkbutton_red { background: white url("../images/inicio_link_arrow.png") no-repeat 125px -14px; color: red; }
+/* line 287, ../sass/screen.sass */
+#black_bkg .linkbutton_red:hover { background: #ec1c24 url("../images/inicio_link_arrow.png") no-repeat 125px 9px; color: white; }
+/* line 290, ../sass/screen.sass */
+#black_bkg #black_left { background: url("../images/inicio_black_us.png") no-repeat left top; padding-left: 101px; }
+/* line 293, ../sass/screen.sass */
+#black_bkg #black_right { background: url("../images/inicio_black_mex.png") no-repeat left top; padding-left: 101px; }
+/* line 296, ../sass/screen.sass */
+#black_bkg .two_column { margin-top: 30px; }
+
+/* line 298, ../sass/screen.sass */
+#white_left { background: url("../images/inicio_tramites.png") no-repeat left top; padding-left: 101px; }
+
+/* line 301, ../sass/screen.sass */
+#white_right { background: url("../images/inicio_auditorias.png") no-repeat left top; padding-left: 101px; }
+
+/* line 307, ../sass/screen.sass */
+.wrapper_inicio #background_holder { display: none; margin: 0; }
+
+/* line 312, ../sass/screen.sass */
+.wrapper_about_us { background: url("../images/nosotros_bkg.jpg") no-repeat center top; }
+/* line 314, ../sass/screen.sass */
+.wrapper_about_us .padded40 { padding-left: 40px; padding-right: 40px; width: 943px; }
+
+/* line 318, ../sass/screen.sass */
+.top_bordered { border-top: white solid 5px; }
+
+/* line 320, ../sass/screen.sass */
+h1 { color: #323232; display: block; font: 45px "SSP_bold"; margin: 85px auto 0; height: 145px; padding-left: 40px; width: 960px; }
+
+/* line 328, ../sass/screen.sass */
+.plain_container { margin: 0 auto; padding: 0; }
+/* line 331, ../sass/screen.sass */
+.plain_container .right_floater { margin-top: -72px; }
+
+/* line 333, ../sass/screen.sass */
+h2 { color: #ec1c24; font-size: 25px; text-transform: uppercase; }
+
+/* line 337, ../sass/screen.sass */
+.nosotros_negative_image { margin-top: -147px; }
+
+/* line 339, ../sass/screen.sass */
+.shaded_bottom { background: white url("../images/shaded_bottom_light.jpg") no-repeat center bottom; }
+
+/* line 341, ../sass/screen.sass */
+.shaded_top { background: white url("../images/shaded_top_light.jpg") no-repeat center top; }
+
+/* line 343, ../sass/screen.sass */
+.negative_shade { height: 48px; margin: 0 auto 30px; width: 1020px; }
+
+/* line 347, ../sass/screen.sass */
+.thin_border_bottom { border: none; background: none; border-bottom: #ededed solid 1px; margin: -1px auto 0; padding: 0; width: 980px; }
+
+/* line 354, ../sass/screen.sass */
+h4 { color: #ec1c24; font-size: 16px; text-align: left; }
+
+/* line 358, ../sass/screen.sass */
+.quarter_column { display: inline-block; vertical-align: top; width: 210px; }
+
+/* line 362, ../sass/screen.sass */
+.quarter_column_left { margin-right: 30px; }
+
+/* line 364, ../sass/screen.sass */
+ul.red_dash { padding: 0 0 0 12px; }
+/* line 366, ../sass/screen.sass */
+ul.red_dash li { list-style: url("../images/about_us_red_dash.jpg"); font-size: 14px; padding-bottom: 6px; }
+
+/* line 370, ../sass/screen.sass */
+.cliente { background: url("../images/aboutus_clientes_sprite.jpg") no-repeat 0 0; display: inline-block; height: 130px; vertical-align: top; width: 144px; }
+
+/* line 376, ../sass/screen.sass */
+#mateo { background-position: -144px 0; width: 160px; }
+
+/* line 379, ../sass/screen.sass */
+#frapesa { background-position: -304px 0; width: 170px; }
+
+/* line 382, ../sass/screen.sass */
+#arnian { background-position: -474px 0; width: 156px; }
+
+/* line 385, ../sass/screen.sass */
+#ulloa { background-position: -631px 0; width: 147px; }
+
+/* line 388, ../sass/screen.sass */
+.inlined { display: inline-block; }
+
+/* line 390, ../sass/screen.sass */
+h5 { color: #ec1c24; font-family: "SSP_regular"; font-size: 18px; margin: 30px 0 0; }
+
+/* line 395, ../sass/screen.sass */
+.companias_seguros { background: url("../images/aboutus_companias.jpg") no-repeat 0 0; display: block; padding-left: 60px; height: 75px; font: 18px "SSP_semibold"; }
+/* line 401, ../sass/screen.sass */
+.companias_seguros span { display: block; padding-top: 30px; }
+
+/* line 404, ../sass/screen.sass */
+.seguros_mexicanos { background-position: 0 -144px; }
+
+/* line 406, ../sass/screen.sass */
+#global_hawk { background-position: 0 -129px; width: 150px; }
+
+/* line 409, ../sass/screen.sass */
+#caic { background-position: -150px -129px; width: 172px; }
+
+/* line 412, ../sass/screen.sass */
+#national_unity { background-position: -325px -129px; width: 154px; }
+
+/* line 415, ../sass/screen.sass */
+#aic { background-position: -477px -129px; width: 170px; }
+
+/* line 418, ../sass/screen.sass */
+#progressive { background-position: -650px -129px; width: 157px; }
+
+/* line 421, ../sass/screen.sass */
+#allstate { background-position: -806px -129px; width: 138px; }
+
+/* line 424, ../sass/screen.sass */
+#access { background-position: 0 -267px; height: 100px; width: 150px; }
+
+/* line 428, ../sass/screen.sass */
+#sutter { background-position: -320px -267px; height: 100px; width: 150px; }
+
+/* line 432, ../sass/screen.sass */
+#chartis { background-position: -150px -267px; height: 100px; width: 172px; }
+
+/* line 436, ../sass/screen.sass */
+#axa { background-position: 0 -364px; height: 100px; width: 150px; }
+
+/* line 440, ../sass/screen.sass */
+#qualitas { background-position: -150px -364px; width: 156px; }
+
+/* line 443, ../sass/screen.sass */
+#metropolitana { background-position: -308px -364px; width: 162px; }
+
+/* line 446, ../sass/screen.sass */
+#atlas { background-position: -456px -364px; width: 175px; }
+
+/* line 449, ../sass/screen.sass */
+#general { background-position: -635px -364px; width: 163px; }
+
+/* line 452, ../sass/screen.sass */
+.extra_padded { padding-left: 40px; padding-right: 40px; }
+
+/* line 455, ../sass/screen.sass */
+.short { width: 100%; }
+
+/* line 458, ../sass/screen.sass */
+.nuestros_clientes_uls .left { padding-right: 80px; width: 180px; }
+/* line 461, ../sass/screen.sass */
+.nuestros_clientes_uls .centered { border: #ededed solid 1px; border-top: none; border-bottom: none; width: 180px; padding: 0 80px; }
+/* line 467, ../sass/screen.sass */
+.nuestros_clientes_uls .right { padding-left: 80px; width: 180px; }
+
+/* line 472, ../sass/screen.sass */
+#premios li { background: url(../images/pirize.png) center 20px no-repeat; border-left: 1px solid #ebebeb; display: inline-block; font: 17px "SSP_semibold", Arial, sans-serif; padding: 130px 0 30px; text-align: center; vertical-align: top; width: 33%; }
+/* line 482, ../sass/screen.sass */
+#premios li.first { border-left: none; }
+/* line 485, ../sass/screen.sass */
+#premios em { display: block; font: 30px "SSP_bold", Arial, sans-serif; font-style: normal; }
+
+/* line 491, ../sass/screen.sass */
+.seguros { background: url("../images/seguros_bkg.jpg") no-repeat center top; }
+
+/* line 494, ../sass/screen.sass */
+.wrapper_audits, .wrapper_buy_online { background: url("../images/audits_bkg.jpg") no-repeat center top; }
+/* line 497, ../sass/screen.sass */
+.wrapper_audits h1 span, .wrapper_buy_online h1 span { font-size: 20px; }
+/* line 499, ../sass/screen.sass */
+.wrapper_audits h3, .wrapper_buy_online h3 { padding: 0 20px; margin: 0 0 30px; }
+/* line 502, ../sass/screen.sass */
+.wrapper_audits h5, .wrapper_buy_online h5 { color: #656565; font: bold 18px sans-serif; }
+/* line 505, ../sass/screen.sass */
+.wrapper_audits img, .wrapper_buy_online img { margin-left: -40px; }
+/* line 507, ../sass/screen.sass */
+.wrapper_audits .container, .wrapper_buy_online .container { padding-top: 30px; }
+
+/* line 509, ../sass/screen.sass */
+hr.fancy_bkg { background: url("../images/audits_fancy_shadow_bkg.jpg") no-repeat center top; border: none; height: 23px; margin: 0 -20px; width: 1020px; }
+
+/* line 516, ../sass/screen.sass */
+.wrapper_buy_online { background: url("../images/compra_wrapper.jpg") no-repeat center top; }
+/* line 518, ../sass/screen.sass */
+.wrapper_buy_online img { margin-top: -20px; }
+
+/* line 520, ../sass/screen.sass */
+.allcaps { text-transform: uppercase; }
+
+/* line 522, ../sass/screen.sass */
+.redded { color: #ec1c24; }
+
+/* line 526, ../sass/screen.sass */
+.wrapper_contacto { background: url("../images/contacto_wrapper_bkg.jpg") no-repeat center top; }
+/* line 528, ../sass/screen.sass */
+.wrapper_contacto a { text-decoration: none; }
+/* line 530, ../sass/screen.sass */
+.wrapper_contacto h3 { padding-bottom: 30px; }
+/* line 532, ../sass/screen.sass */
+.wrapper_contacto form { margin-top: 35px; }
+/* line 534, ../sass/screen.sass */
+.wrapper_contacto .linkbutton_red { background-position: 90px 9px; border-top: none; border-left: none; border-right: none; text-align: left; }
+
+/* line 540, ../sass/screen.sass */
+.custom_textbox, .select_container, textarea { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; border: 1px solid #8c8c8c; background: #f7f7f7; display: block; padding: 5px 2%; margin: 8px 0 12px; width: 100%; }
+
+/* line 548, ../sass/screen.sass */
+label { font-size: 14px; }
+
+/* line 551, ../sass/screen.sass */
+.select_container { background: #f7f7f7 url("../images/select_bkg.png") no-repeat 98% 8px; overflow: hidden; padding: 5px 2%; width: 100%; }
+
+/* line 556, ../sass/screen.sass */
+select { width: 110%; background: none; -webkit-appearance: none; border: none; }
+
+/* line 561, ../sass/screen.sass */
+textarea { height: 100px; }
+
+/* line 563, ../sass/screen.sass */
+.small_shaded { background: url("../images/contacto_smallshaded.jpg") no-repeat center top; border: none; height: 16px; width: 458px; margin: -22px 0 -8px; }
+
+/* line 569, ../sass/screen.sass */
+.contact_img { bottom: 0; left: 0; margin: 0; position: absolute; }
+
+/* line 576, ../sass/screen.sass */
+.wrapper_contacto .container.shaded_top { position: relative; }
+
+/* ************ GENERAL ************ */
+/* line 2, ../sass/tramites_permisos_screen.sass */
+strong.red { color: #ec1c24; }
+
+/* ************ TRAMITES *********** */
+/* line 8, ../sass/tramites_permisos_screen.sass */
+#wrapper.tramites-permisos { background-image: url("../images/tramites_background.jpg"); }
+
+/* line 12, ../sass/tramites_permisos_screen.sass */
+.slider_navigation { list-style-type: none; margin: 0; padding: 0; }
+/* line 17, ../sass/tramites_permisos_screen.sass */
+.slider_navigation li { background: url(../images/navigation_sprite.png) 0 0 no-repeat; display: inline-block; height: 26px; vertical-align: top; width: 27px; }
+/* line 24, ../sass/tramites_permisos_screen.sass */
+.slider_navigation li.prev:hover { background-position: 0 -37px; }
+/* line 27, ../sass/tramites_permisos_screen.sass */
+.slider_navigation li.next { background-position: -33px 0; }
+/* line 30, ../sass/tramites_permisos_screen.sass */
+.slider_navigation li.next:hover { background-position: -33px -37px; }
+
+/* line 33, ../sass/tramites_permisos_screen.sass */
+h2.tramite, h2.permisos { background: url(../images/tramites_sprite.png) 0 15px no-repeat; color: #656565; font: bold 25px "Myriad Pro", Verdana, sans-serif; padding: 0 0 0 75px; text-transform: none; }
+/* line 40, ../sass/tramites_permisos_screen.sass */
+h2.tramite span, h2.permisos span { background: url(../images/tramites_sprite.png) 0 0 no-repeat; display: block; padding: 22px 75px 22px 0; }
+
+/* line 46, ../sass/tramites_permisos_screen.sass */
+h2.us span, h2.us.seguros span { background-position: right -171px; }
+
+/* line 50, ../sass/tramites_permisos_screen.sass */
+h2.mx span, h2.mx.seguros span { background-position: right -534px; }
+
+/* line 54, ../sass/tramites_permisos_screen.sass */
+.slider_navigation { margin: 0 0 0 auto; text-align: right; width: 100px; }
+
+/* line 60, ../sass/tramites_permisos_screen.sass */
+.grid_slider .dash_decor { background: url(../images/red_dash.jpg) 0 0 no-repeat; display: block; height: 2px; margin: 20px 0 0; width: 13px; }
+/* line 66, ../sass/tramites_permisos_screen.sass */
+.grid_slider .dash_decor_eu { margin-top: 50px; }
+/* line 69, ../sass/tramites_permisos_screen.sass */
+.grid_slider ul { list-style-type: none; margin: 40px 0 0; padding: 0; }
+/* line 74, ../sass/tramites_permisos_screen.sass */
+.grid_slider li { display: none; }
+/* line 77, ../sass/tramites_permisos_screen.sass */
+.grid_slider li.current { display: block; }
+
+/* line 79, ../sass/tramites_permisos_screen.sass */
+.dmv_img, .eu_img, .mx_img, .permisos_img { background: url(../images/slide_dmv.png) 0 0 no-repeat; display: none; height: 225px; margin: 0 0 0 -35px; width: 485px; }
+
+/* line 86, ../sass/tramites_permisos_screen.sass */
+#dmv_img2, #mx_img2, #permisos_img2 { background-position: 0 -256px; }
+
+/* line 90, ../sass/tramites_permisos_screen.sass */
+.eu_img { background: url(../images/slide_eu.png) 0 0 no-repeat; }
+
+/* line 93, ../sass/tramites_permisos_screen.sass */
+#eu_img2 { background-position: 0 -256px; }
+
+/* line 96, ../sass/tramites_permisos_screen.sass */
+.mx_img { background: url(../images/slide_mx.png) 0 0 no-repeat; }
+
+/* line 99, ../sass/tramites_permisos_screen.sass */
+.permisos_img { background: url(../images/slide_permisos.png) 0 0 no-repeat; margin: 60px 0 0 -35px; }
+
+/* line 103, ../sass/tramites_permisos_screen.sass */
+.dmv_img.current, .eu_img.current, .mx_img.current, .permisos_img.current { display: block; }
+
+/* line 106, ../sass/tramites_permisos_screen.sass */
+.grid_shadow { *zoom: 1; filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFF6F6F6'); background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(2%, #fbfbfb), color-stop(50%, #f6f6f6), color-stop(98%, #fbfbfb), color-stop(100%, #ffffff)); background-image: -webkit-linear-gradient(left, #ffffff, #fbfbfb 2%, #f6f6f6 50%, #fbfbfb 98%, #ffffff); background-image: -moz-linear-gradient(left, #ffffff, #fbfbfb 2%, #f6f6f6 50%, #fbfbfb 98%, #ffffff); background-image: -o-linear-gradient(left, #ffffff, #fbfbfb 2%, #f6f6f6 50%, #fbfbfb 98%, #ffffff); background-image: linear-gradient(left, #ffffff, #fbfbfb 2%, #f6f6f6 50%, #fbfbfb 98%, #ffffff); margin: 0 -20px 7px; padding: 0 27px 7px; }
+
+/* line 112, ../sass/tramites_permisos_screen.sass */
+ul.grid { border: 1px solid #cbcbcb; border-left: none; border-right: none; font-size: 12px; list-style-type: none; margin: 50px 10px 0; padding: 0; }
+/* line 121, ../sass/tramites_permisos_screen.sass */
+ul.grid li { background: #fcfcfc url(../images/tramites_sprite.png) 97% -715px no-repeat; border-bottom: none; border-top: 1px solid #cbcbcb; cursor: pointer; display: inline-block; min-height: 40px; padding: 2px 0; vertical-align: top; width: 33.3%; }
+/* line 132, ../sass/tramites_permisos_screen.sass */
+ul.grid li span { display: block; border-right: 1px solid #cbcbcb; padding: 13px 35px 13px 15px; }
+/* line 137, ../sass/tramites_permisos_screen.sass */
+ul.grid li:hover { background-color: #f2f2f2; background-position: 97% -843px; }
+/* line 141, ../sass/tramites_permisos_screen.sass */
+ul.grid li.blank { background-image: none; }
+/* line 144, ../sass/tramites_permisos_screen.sass */
+ul.grid li.blank:hover { background-color: #fcfcfc; }
+/* line 148, ../sass/tramites_permisos_screen.sass */
+ul.grid li.first span { border-left: 1px solid #cbcbcb; }
+/* line 151, ../sass/tramites_permisos_screen.sass */
+ul.grid li.first_row { border-top: none; }
+/* line 154, ../sass/tramites_permisos_screen.sass */
+ul.grid span { min-height: 14px; }
+/* line 157, ../sass/tramites_permisos_screen.sass */
+ul.grid .two_lines { line-height: 1em; }
+/* line 160, ../sass/tramites_permisos_screen.sass */
+ul.grid .two_lines span { font-size: 12px; padding: 8px 35px 8px 15px; }
+
+/* line 163, ../sass/tramites_permisos_screen.sass */
+ul.grid_no_margin_top { margin-top: 0; }
+
+/* line 166, ../sass/tramites_permisos_screen.sass */
+.slideshow.left .eu_img { margin: 0 -34px 0 -10px; }
+
+/* line 172, ../sass/tramites_permisos_screen.sass */
+.tramites-permisos h3 { border-right: 1px solid #cbcbcb; color: #ec1c24; display: inline-block; font: bold 16px "Myriad Pro", Verdana, sans-serif; margin: 20px 0 0 17px; padding: 0 5px 0 0; }
+/* line 180, ../sass/tramites_permisos_screen.sass */
+.tramites-permisos h3 span { border-bottom: 6px solid #f2f2f2; display: block; padding: 3px 30px 10px 0; }
+/* line 185, ../sass/tramites_permisos_screen.sass */
+.tramites-permisos h4 { color: #ec1c24; font-size: 25px; margin: 0 0 15px; padding: 10px 0 0; }
+/* line 191, ../sass/tramites_permisos_screen.sass */
+.tramites-permisos .slideshow { margin-bottom: 35px; margin-top: 40px; }
+/* line 194, ../sass/tramites_permisos_screen.sass */
+.tramites-permisos .slideshow.left { margin-top: 20px; }
+/* line 197, ../sass/tramites_permisos_screen.sass */
+.tramites-permisos .shaded_top { padding-top: 20px; }
+
+/* ************ SEGUROS *********** */
+/* line 4, ../sass/seguros_screen.sass */
+h2.seguros { background: url(../images/seguros_sprite.png) 0 15px no-repeat; color: #656565; font: bold 25px "Myriad Pro", Verdana, sans-serif; margin-top: 0; padding: 0 0 0 75px; text-transform: none; }
+/* line 12, ../sass/seguros_screen.sass */
+h2.seguros span { background: url(../images/tramites_sprite.png) 0 0 no-repeat; display: block; padding: 22px 75px 22px 0; }
+
+/* line 18, ../sass/seguros_screen.sass */
+.seguros_img, .seguros .mx_img { background: url(../images/slide_seguros_us.png) 0 0 no-repeat; display: none; height: 225px; margin: 60px 0 0 30px; width: 435px; }
+
+/* line 25, ../sass/seguros_screen.sass */
+#seguros_us_img2 { background-position: 0 -256px; }
+
+/* line 29, ../sass/seguros_screen.sass */
+.seguros .mx_img { background: url(../images/slide_seguros_mx.png) 0 0 no-repeat; }
+
+/* line 32, ../sass/seguros_screen.sass */
+#seguros_mx_img2 { background-position: 0 -256px; }
+
+/* line 36, ../sass/seguros_screen.sass */
+.seguros_img.current, .seguros .mx_img.current { display: block; }
+
+/* line 40, ../sass/seguros_screen.sass */
+.seguros { font-size: 14px; }
+/* line 44, ../sass/seguros_screen.sass */
+.seguros h3 { border-right: 1px solid #cbcbcb; color: #ec1c24; display: inline-block; font: bold 16px "Myriad Pro", Verdana, sans-serif; margin: 20px 0 0 20px; padding: 0 5px 0 0; }
+/* line 52, ../sass/seguros_screen.sass */
+.seguros h3 span { border-bottom: 6px solid #f2f2f2; display: block; padding: 3px 30px 10px 0; }
+/* line 57, ../sass/seguros_screen.sass */
+.seguros h4 { color: #ec1c24; font-size: 25px; margin: 0 0 15px; padding: 10px 0 0; }
+/* line 63, ../sass/seguros_screen.sass */
+.seguros .slideshow { margin-bottom: 35px; margin-top: 60px; }
+/* line 68, ../sass/seguros_screen.sass */
+.seguros .grid_slider ul { margin-top: 10px; }
+/* line 71, ../sass/seguros_screen.sass */
+.seguros hr.fancy_bkg { margin: 0 -20px 40px; }
+/* line 74, ../sass/seguros_screen.sass */
+.seguros ul.grid { margin-top: 0; }
+/* line 77, ../sass/seguros_screen.sass */
+.seguros .shaded_top { padding-top: 20px; }
+
+@media screen and (min-width: 1601px) { /* line 585, ../sass/screen.sass */
+  #wrapper.wrapper_inicio { background-size: auto auto; }
+  /* line 588, ../sass/screen.sass */
+  #wrapper { background-size: cover; } }

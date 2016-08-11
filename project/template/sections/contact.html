@@ -1,0 +1,86 @@
+{% extends "layout/base.html" %}
+{% block wrapper_class %}wrapper_contacto{% endblock %}
+{% block site_wrapper %}
+{% autoescape off %}
+	<h1>{{section_data_db.0}}</h1>
+	<div class="container top_bordered shaded_top">
+		<h3 class="two_column">{{section_data_db.1}}</h3><h3 class="two_column">{{section_data_db.2}}</h3>
+		<hr class="fancy_bkg" />
+		<div class="two_column">
+			<p>
+				{{section_data_db.3}}
+			</p>
+			<form method="post" action="" id="form_contact">
+			{% csrf_token %}
+			<input type="hidden" name="lang" value="{{ln}}" />
+			<label>{{section_data_db.4}} <span class="redded">*</span> </label>
+			<input type="text" id="name" name="name" lang="es" class="custom_textbox required" />
+			<label>{{section_data_db.5}} <span class="redded">*</span></label>
+			<input type="email" id="email" name="email" lang="es" class="custom_textbox required" />
+	
+			<label>{{section_data_db.6}}</label>
+			<input type="text" id="tel" name="tel" lang="es" class="custom_textbox required" />
+			<label>{{section_data_db.7}}</label>
+			<div class="select_container">
+				<select id="select_service"  name="select_service">
+					{{section_data_db.8}}
+				</select>
+				<div id="select_decor"></div>
+			</div>	
+			<label>{{section_data_db.9}} <span class="redded">*</span></label>
+			<textarea id="message" name="message" class="custom_textarea"></textarea>
+			<div class="column half first">
+				<p class="form_note">{{section_data_db.10}} <span class="redded">*</span></p>
+				<hr class="thin_border_bottom short" />
+				<br />
+			</div><div class="column half first">
+				<input type="submit"  class="linkbutton_red" value="Enviar" />
+			</div>
+		</form>
+		<span id="msg"></span>
+		<img src="/static/images/contact_img.jpg" alt="Contáctanos" class="contact_img"/>
+		</div><div class="two_column">
+		<p>{{section_data_db.11}}</p>
+		<hr class="small_shaded" />
+		<p>
+			{{section_data_db.12}}
+		</p>
+		<p>
+			{{section_data_db.13}}
+		</p>
+		<br />
+		<p>{{section_data_db.14}}</p>
+		<hr class="small_shaded" />
+		<p>
+			{{section_data_db.15}}
+		</p>
+		<p>
+			{{section_data_db.16}}
+		</p>
+		<br />
+		<p class="redded"><strong>{{section_data_db.17}}</strong></p>
+		<hr class="small_shaded" />
+		<p>
+			{{section_data_db.18}}
+		</p>
+		<p>
+			{{section_data_db.19}}
+		</p>
+		<p>
+			{{section_data_db.20}}
+		</p>
+		<p>
+			{{section_data_db.21}}
+		</p>
+		<p>
+			{{section_data_db.22}}
+		</p>
+		<p>
+			{{section_data_db.23}}
+		</p>
+		<p>
+			{{section_data_db.24}}
+		</p>
+		</div>
+{% endautoescape %}
+{% endblock %}

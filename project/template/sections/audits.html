@@ -1,0 +1,28 @@
+{% extends "layout/base.html" %}
+{% block wrapper_class %}wrapper_audits{% endblock %}
+{% block site_wrapper %}
+{% autoescape off %}
+	<h1>{{section_data_db.0}}</h1>
+	<div class="container top_bordered shaded_top">
+		<h3>{{section_data_db.1}}</h3>
+		<hr class="fancy_bkg" />
+		<div class="two_column">
+			<p>
+				{{section_data_db.2}}
+			</p>
+			<p>
+				{{section_data_db.3}}
+			</p>
+			<br />
+			<ul class="red_dash">
+				<strong>
+					{{section_data_db.4}}
+				</strong>
+			</ul>
+		</div><div class="two_column">
+			<img src="/static/images/audits_img.jpg" alt="Inter Red Insurance" />
+		</div>
+	</div>
+
+{% endautoescape %}
+{% endblock %}

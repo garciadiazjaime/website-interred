@@ -1,0 +1,180 @@
+{% extends "layout/base.html" %}
+{% block wrapper_class %}tramites-permisos{% endblock %}
+{% block site_wrapper %}
+{% autoescape off %}
+<div class="container plain_container">
+	<h1>
+		{{section_data_db.0}}
+	</h1>
+	{{section_data_db.38}}
+</div>
+<div class="container top_bordered shaded_top">
+	<div class="two_column">
+		<p>{{section_data_db.1}}</p>
+	</div><div class="two_column">
+		<p>{{section_data_db.2}}</p>
+	</div>
+	<hr class="fancy_bkg">
+	
+	<div id="dmv">
+		<h2 class="tramite us"><span>{{section_data_db.3}}</span></h2>	
+		<div class="two_column ">
+			<ul class="slider_navigation" alt="slider_dmv">
+				<li id="dmv_prev" class="prev"></li>
+				<li id="dmv_next" class="next"></li>
+			</ul>	
+			<div id="slide_dmv_wrapper">
+				<div id="slider_dmv" class="grid_slider">
+					<ul>
+						<li id="item_0" class="current first">
+							<span class="dash_decor"></span>
+							<br />
+							<br />
+							{{section_data_db.4}}
+						</li><li id="item_1">
+							{{section_data_db.5}}
+						</li><li id="item_2">
+							{{section_data_db.6}}
+						</li><li id="item_3">
+							{{section_data_db.7}}
+						</li><li id="item_4">
+							{{section_data_db.8}}
+						</li><li id="item_5">
+							{{section_data_db.9}}
+						</li><li id="item_6" class="last">
+							{{section_data_db.10}}
+						</li>
+					</ul>
+				</div><!-- #slider_dmv -->
+			</div><!-- #slide_dmv_wrapper -->
+		</div><div id="dmv_slideshow" class="two_column">
+			<div class="slideshow">
+				<div><span class="dmv_img current"></span></div>
+				<div><span id="dmv_img2" class="dmv_img"></span></div>
+			</div>
+		</div>
+	</div>
+	<div class="list_area grid">
+		<h3><span>{{section_data_db.3}}</span></h3>
+		<div class="grid_shadow">
+			<ul class="slider_dmv grid grid_no_margin_top" alt="slider_dmv">
+				{{section_data_db.11}}
+			</ul>
+		</div>
+	</div>
+	<span id="us"></span>
+	<div id="eu" class="shaded_top">
+		<h2 class="tramite us"><span>{{section_data_db.12}}</span></h2>	
+		
+		<div class="two_column ">
+			<div class="slideshow left">
+				<div><span class="eu_img current"></span></div>
+				<div><span id="eu_img2" class="eu_img"></span></div>
+			</div>
+		</div><div id="eu_slideshow" class="two_column">
+			<ul class="slider_navigation" alt="slider_eu">
+				<li id="eu_prev" class="prev"></li>
+				<li id="eu_next" class="next"></li>
+			</ul>	
+			<div id="slide_eu_wrapper">
+				<div id="slider_eu" class="grid_slider">
+					<ul>
+						<li id="item_0" class="current first">
+							<span class="dash_decor"></span>
+							<br />
+							<br /><!-- AGREGAR EL ID F2290 QUE FALTÓ EN LA LISTA -->
+							{{section_data_db.13}}
+						</li><li id="item_1">
+							{{section_data_db.14}}
+						</li><li id="item_2">
+							{{section_data_db.15}}
+						</li><li id="item_3">
+							{{section_data_db.16}}
+						</li><li id="item_4">
+							{{section_data_db.17}}
+						</li><li id="item_5">
+							{{section_data_db.18}}
+						</li><li id="item_6">
+							{{section_data_db.19}}
+						</li><li id="item_7">
+							{{section_data_db.37}}
+						</li><li id="item_8">
+							{{section_data_db.20}}
+						</li><li id="item_9">
+							{{section_data_db.21}}
+						</li><li id="item_10">
+							{{section_data_db.22}}
+						</li><li id="item_11">
+							{{section_data_db.23}}
+						</li><li id="item_12">
+							{{section_data_db.24}}
+						</li><li id="item_13" class="last">
+							{{section_data_db.25}}
+						</li>
+					</ul>
+				</div><!-- #slider_eu -->
+			</div><!-- #slide_eu_wrapper -->
+		</div>
+	</div>
+	<div class="list_area grid">
+		<h3><span>{{section_data_db.12}}</span></h3>
+		<div class="grid_shadow">
+			<ul class="slider_dmv grid grid_no_margin_top" alt="slider_eu">
+				{{section_data_db.26}}
+			</ul>
+		</div>
+	</div>
+	<div id="mx" class="shaded_top">
+		<h2 class="tramite mx"><span>{{section_data_db.27}}</span></h2>	
+
+		<div class="two_column ">
+			<ul class="slider_navigation" alt="slider_mx">
+				<li id="mx_prev" class="prev"></li>
+				<li id="mx_next" class="next"></li>
+			</ul>	
+			<div id="slide_mx_wrapper">
+				<div id="slider_mx" class="grid_slider">
+					
+					<ul>
+						<li id="item_0" class="current first">
+							<span class="dash_decor"></span>
+							<br />
+							<br />
+							{{section_data_db.28}}
+						</li><li id="item_1">
+							{{section_data_db.29}}
+						</li><li id="item_2">
+							{{section_data_db.30}}
+						</li><li id="item_3">
+							{{section_data_db.31}}
+						</li><li id="item_4">
+							{{section_data_db.32}}
+						</li><li id="item_5">
+							{{section_data_db.33}}
+						</li><li id="item_6">
+							{{section_data_db.34}}
+						</li><li id="item_7" class="last">
+							{{section_data_db.35}}
+						</li>
+					</ul>
+				</div><!-- #slider_eu -->
+			</div><!-- #slide_eu_wrapper -->
+		</div><div id="mx_slideshow" class="two_column">
+			<div class="slideshow">
+				<div><span class="mx_img current"></span></div>
+				<div><span id="mx_img2" class="mx_img"></span></div>
+			</div>
+		</div>
+	</div>
+	<div class="list_area grid">
+		<h3><span>{{section_data_db.27}}</span></h3>
+		<div class="grid_shadow">
+			<ul class="slider_dmv grid grid_no_margin_top" alt="slider_mx">
+				{{section_data_db.36}}
+			</ul>
+		</div>
+	</div>	
+</div>
+
+{% endautoescape %}
+{% endblock %}
